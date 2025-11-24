@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Space_Suit_Manager.Controller.TrajeController">
+
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="Opciones">
+                    <MenuItem text="Guardar"        onAction="#guardarTraje"/>
+                    <MenuItem text="Modificar"      onAction="#modificarTraje"/>
+                    <MenuItem text="Eliminar"       onAction="#eliminarTraje"/>
+                    <MenuItem text="Buscar"         onAction="#buscarTraje"/>
+                    <MenuItem text="Listar"         onAction="#listarTrajes"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Serializar"     onAction="#serializarTrajes"/>
+                    <MenuItem text="Deserializar"   onAction="#deserializarTrajes"/>
+                    <SeparatorMenuItem/>
+                    <MenuItem text="Salir"          onAction="#salirApp"/>
+                </Menu>
+            </MenuBar>
+
+            <Label text="Gestión de Trajes Espaciales"
+                   style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-padding: 10;" />
+        </VBox>
+    </top>
+
+    <left>
+        <VBox spacing="8">
+            <padding>
+                <Insets top="12" right="12" bottom="12" left="12" />
+            </padding>
+
+            <Label text="ID del Traje:" />
+            <TextField fx:id="txtId" />
+
+            <Label text="Talla:" />
+            <TextField fx:id="txtTalla" />
+
+            <Label text="Peso soportado (kg):" />
+            <TextField fx:id="txtPeso" />
+
+            <Label text="Fecha de inspección:" />
+            <DatePicker fx:id="dateInspeccion" />
+
+            <HBox spacing="8" alignment="CENTER">
+                <Button text="Guardar" onAction="#guardarTraje" />
+                <Button text="Modificar" onAction="#modificarTraje" />
+                <Button text="Eliminar" onAction="#eliminarTraje" />
+            </HBox>
+
+            <HBox spacing="8" alignment="CENTER">
+                <Button text="Buscar" onAction="#buscarTraje" />
+                <Button text="Listar" onAction="#listarTrajes" />
+            </HBox>
+
+            <HBox spacing="8" alignment="CENTER">
+                <Button text="Serializar" onAction="#serializarTrajes" />
+                <Button text="Deserializar" onAction="#deserializarTrajes" />
+                <Button text="Salir" onAction="#salirApp" />
+            </HBox>
+        </VBox>
+    </left>
+
+    <center>
+        <TableView fx:id="tblTrajes" onMouseClicked="#mostrarSeleccion">
+            <columns>
+                <TableColumn fx:id="colId"   text="ID"    prefWidth="90"/>
+                <TableColumn fx:id="colTalla" text="Talla" prefWidth="100"/>
+                <TableColumn fx:id="colPeso"  text="Peso"  prefWidth="100"/>
+                <TableColumn fx:id="colFecha" text="Fecha" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>

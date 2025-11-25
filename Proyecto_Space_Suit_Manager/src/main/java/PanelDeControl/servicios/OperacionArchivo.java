@@ -86,6 +86,6 @@ public interface OperacionArchivo {
      * @param nombreArchivo el nombre del archivo de donde se leerán los datos
      * @return un arreglo con los trajes espaciales deserializados, o null si hay error
      */
-    Traje_Espacial[] deserializar(String ruta, String nombreArchivo);
+    List<Traje_Espacial> deserializar(String ruta, String nombreArchivo);
 
 }

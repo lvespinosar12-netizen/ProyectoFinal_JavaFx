@@ -11,13 +11,13 @@ import java.io.Serializable;
  * a través de serialización y deserialización.
  * 
  * Los atributos son protegidos para permitir el acceso mediante reflexión desde
- * otros paquetes, especialmente desde {@link PanelDeControl.servicios.ImplementacionOperacionTraje}.
+ * otros paquetes, especialmente desde {@link Space_Suit_Manager.Servicios.ImplementacionOperacionTraje}.
  * 
  * @author Laura Espinosa y Jhosayde Leon
  * @version 2.0
  * @since 2025
  * @see Serializable
- * @see PanelDeControl.servicios.ImplementacionOperacionTraje
+ * @see Space_Suit_Manager.Servicios.ImplementacionOperacionTraje
  */
 public class Traje_Espacial implements Serializable {
 

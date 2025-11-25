@@ -1,4 +1,4 @@
-package PanelDeControl.servicios;
+package Space_Suit_Manager.Servicios;
 
 import Space_Suit_Manager.modelo.Traje_Espacial;
 

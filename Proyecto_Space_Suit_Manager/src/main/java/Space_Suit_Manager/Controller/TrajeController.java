@@ -1,7 +1,7 @@
 package Space_Suit_Manager.Controller;
 
-import PanelDeControl.servicios.ImplementacionOperacionTraje;
-import PanelDeControl.servicios.OperacionTraje;
+import Space_Suit_Manager.Servicios.ImplementacionOperacionTraje;
+import Space_Suit_Manager.Servicios.OperacionTraje;
 import Space_Suit_Manager.modelo.Traje_Espacial;
 import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleStringProperty;

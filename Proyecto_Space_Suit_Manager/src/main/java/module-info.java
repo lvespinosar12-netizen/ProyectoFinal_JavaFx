@@ -11,6 +11,6 @@ module co.edu.poli.Proyecto_Space_Suit_Manager {
     opens Space_Suit_Manager.modelo to javafx.fxml;
     exports Space_Suit_Manager.modelo;
 
-    opens PanelDeControl.servicios to javafx.fxml;
-    exports PanelDeControl.servicios;
+    opens Space_Suit_Manager.Servicios to javafx.fxml;
+    exports Space_Suit_Manager.Servicios;
 }
